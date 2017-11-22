@@ -19,7 +19,7 @@ particular thing[^1].
 > Occasionally, articles are omitted altogether before certain nouns. In these cases, the article is implied but not actually present. This implied article is sometimes called a “zero article.”[^1]
 
 + Sports and academic subjects do not require articles:
-    + I like to play baseball.
+    + {:.eg} I like to play baseball.
     + My sister was always good at math.
 + The article the is not used before the names of countries and territories:
     + Our flight to China was canceled.
