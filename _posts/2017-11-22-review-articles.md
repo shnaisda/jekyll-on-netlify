@@ -20,14 +20,14 @@ particular thing[^1].
 
 + Sports and academic subjects do not require articles:
     + {:.eg} I like to play baseball.
-    + My sister was always good at math.
+    + {:.eg} My sister was always good at math.
 + The article the is not used before the names of countries and territories:
-    + Our flight to China was canceled.
+    + {:.eg} Our flight to China was canceled.
 + However, the is used before countries whose
     + names are plural in form:
-        + Have you ever been to the Netherlands?
+        + {:.eg} Have you ever been to the Netherlands?
     + names include the words states, kingdom, or republic:
-        + My sister lives in the United States.
+        + {:.eg} My sister lives in the United States.
 
 ---
 [^1]: ["Articles: Grammar Rules | Grammarly"](https://www.grammarly.com/blog/articles/)
