@@ -18,7 +18,7 @@ published: false
 
 Have you ever been to the Netherlands?
 
-** names include the words states, kingdom, or republic:
+-- names include the words states, kingdom, or republic:
 
 My sister lives in the United States.
 
