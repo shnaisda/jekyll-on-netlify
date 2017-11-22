@@ -1,12 +1,11 @@
 ---
 published: false
----
----
 layout: post
-title:  "冠詞おさらい: Definite, Indefinite and Zero Articles"
-date:   2017-11-22
+title: '冠詞おさらい: Definite, Indefinite and Zero Articles'
+date: 2017-11-22T00:00:00.000Z
 categories: blog
 ---
+
 
 > The definite article is the word the. It limits the meaning of a noun to one particular thing[^1].
 
