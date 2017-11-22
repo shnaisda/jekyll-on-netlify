@@ -29,6 +29,11 @@ particular thing[^1].
     + names include the words states, kingdom, or republic:
         + {:.eg} My sister lives in the United States.
 
----
-[^1]: ["Articles: Grammar Rules | Grammarly"](https://www.grammarly.com/blog/articles/)
 
+> この類の説明では、すでにあった、ちゃんとした意味をもった名詞に、　a　は、まるでアクセサリーのように「正しく」つけられるものであるかのように思われる。
+>しかし、本当は逆である。すでにあった、ちゃんとした意味をもっていたのは、　a　である。そして、名詞の意味は不定冠詞の　a　に「つけられた」ことによって決まってくる。
+
+
+---
+[^1]: ["Articles: Grammar Rules \| Grammarly"](https://www.grammarly.com/blog/articles/)
+[^2]: ["なぜ英語では、数や冠詞の概念が重要なのでしょうか？ \| 教えて!goo"](https://oshiete.goo.ne.jp/qa/9582457.html)
