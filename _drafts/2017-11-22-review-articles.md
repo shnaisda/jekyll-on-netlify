@@ -7,12 +7,12 @@ categories: blog
 ---
 
 
-> The definite article is the word the. It limits the meaning of a noun to one particular thing [^1].
+> The definite article is the word the. It limits the meaning of a noun to one particular thing[^1].
 
 例えば、“Are you going to the party this weekend?”。これは定冠詞theがあることで、お互いに知っている「あのパーティ」だと分かる。
 
 > The indefinite article indicates that a noun refers to a general idea rather than a 
-particular thing [^1]. 
+particular thing[^1]. 
 
 例えば、“Should I bring a gift to the party?” 。これは不定冠詞aがあることで、お互いに知らない（彼も私も）が、ギフトが特定の品ではないと分かる。
 
