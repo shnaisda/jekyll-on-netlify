@@ -17,5 +17,9 @@ published: false
 
 Have you ever been to the Netherlands?
 
+* and names include the words states, kingdom, or republic:
+
+My sister lives in the United States.
+
 ---
 [^1]:["Articles: Grammar Rules | Grammarly"](https://www.grammarly.com/blog/articles/)
