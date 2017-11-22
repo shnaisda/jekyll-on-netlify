@@ -20,7 +20,7 @@ categories: blog
 +   However, the is used before countries whose
     + names are plural in form:
     
-    Have you ever been to the Netherlands?
+        + Have you ever been to the Netherlands?
 
     + names include the words states, kingdom, or republic:
 
