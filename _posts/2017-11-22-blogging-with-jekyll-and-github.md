@@ -102,6 +102,8 @@ Build up directory structure something like below:
 {% highlight yml %}
 title: Your Page title
 email: youremail@example.com
+markdown: kramdown
+theme: minima
 {% endhighlight %}
 
 * **> assets/css/style.scss**
