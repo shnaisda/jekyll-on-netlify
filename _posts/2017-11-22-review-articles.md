@@ -14,7 +14,6 @@ published: false
  Our flight to China was canceled.
 
 +   However, the is used before countries whose
-
 ++      names are plural in form:
 
 Have you ever been to the Netherlands?
