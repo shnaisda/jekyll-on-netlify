@@ -1,6 +1,6 @@
 ---
-published: true
 layout: post
+published: true
 title: '冠詞おさらい: Definite, Indefinite and Zero Articles'
 date: {}
 categories: blog
