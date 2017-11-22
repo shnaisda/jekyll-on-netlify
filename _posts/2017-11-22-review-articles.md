@@ -2,7 +2,8 @@
 layout: post
 published: true
 title: '冠詞おさらい: Definite, Indefinite and Zero Articles'
-date: today
+date:
+  today: null
 categories: blog
 ---
 
