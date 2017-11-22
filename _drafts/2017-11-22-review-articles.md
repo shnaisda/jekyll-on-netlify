@@ -26,5 +26,5 @@ categories: blog
 + Sports and academic subjects
 
 ---
-[^1]:["Articles: Grammar Rules | Grammarly"](https://www.grammarly.com/blog/articles/)
+[^1]: ["Articles: Grammar Rules | Grammarly"](https://www.grammarly.com/blog/articles/)
 
