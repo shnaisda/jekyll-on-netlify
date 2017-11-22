@@ -10,6 +10,7 @@ published: false
 > Occasionally, articles are omitted altogether before certain nouns. In these cases, the article is implied but not actually present. This implied article is sometimes called a “zero article.”[^1]
 
 * Typically, the article the is not used before the names of countries and territories:
+
  Our flight to China was canceled.
 
 * However, the is used before countries whose names are plural in form:
