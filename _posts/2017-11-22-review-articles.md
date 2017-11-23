@@ -1,48 +1,107 @@
 ---
 layout: post
 published: true
-title: '冠詞おさらい: Definite, Indefinite and Zero Articles'
+title: '冠詞まとめ: Zero Article'
 date: 2017-11-22T00:00:00.000Z
 categories: blog
 ---
 
+定冠詞と不定冠詞の用法は分かっている（つもり）だけれど、無冠詞がさっぱりなので下記ページの例文を引用してまとめた。少なくとも抽象化の機能は分かるけれど、その他例外が多すぎて、考え方を身に付けるよりもパターンを覚えた方が早いと思った次第。
 
-> The definite article is the word the. It limits the meaning of a noun to one particular thing[^1].
++ ["Articles: Grammar Rules \| Grammarly"](https://www.grammarly.com/blog/articles/)
++ ["The zero article (-) \| Grammaring - A guide to English grammar"](http://www.grammaring.com/the-zero-article)
 
-例えば、“Are you going to the party this weekend?”。これは定冠詞theがあることで、お互いに知っている「あのパーティ」について言っていると分かる。
 
-> The indefinite article indicates that a noun refers to a general idea rather than a 
-particular thing[^1]. 
++ ## The Definite Article
 
-例えば、“Should I bring a gift to the party?” 。これは不定冠詞aがあることで、一般的なギフトについて言っていると分かる。
+> The definite article is the word the. It limits the meaning of a noun to one particular thing.
 
-> Occasionally, articles are omitted altogether before certain nouns. In these cases, the article is implied but not actually present. This implied article is sometimes called a “zero article.”[^1]
++ ## The Indefinite Article
 
-+ Sports and academic subjects do not require articles:
-    + {:.eg} I like to play baseball.
-    + {:.eg} My sister was always good at math.
-+ The article the is not used before the names of countries and territories:
-    + {:.eg} Our flight to China was canceled.
-+ However, the is used before countries whose
-    + names are plural in form:
-        + {:.eg} Have you ever been to the Netherlands?
-    + names include the words states, kingdom, or republic:
-        + {:.eg} My sister lives in the United States.
+> Indefinite articles are used when we are referring to an unspecified thing or quantity. We use them when we don’t know (or don’t care) which thing we’re talking about.
 
-> ## ネイティブスピーカーの話し方からみる思考プロセス
-> この類の説明では、すでにあった、ちゃんとした意味をもった名詞に、　a　は、まるでアクセサリーのように「正しく」つけられるものであるかのように思われる。
->しかし、本当は逆である。すでにあった、ちゃんとした意味をもっていたのは、　a　である。そして、名詞の意味は不定冠詞の　a　に「つけられた」ことによって決まってくる。
++ ## The Zero Article
+    + A proper name is normally not preceded by an article:
+        + {:.eg} Turner is my favourite painter.
+        + {:.eg} Where's Peter?
+        + {:.eg} Uncle Jerry visited us the other day.
+    + Names of places and institutions which consist of a proper name and another noun do not take an article:
+        + {:.eg} Johns Hopkins University
+        + {:.eg} Trafalgar Square
+        + {:.eg} Victoria Station
+        + {:.eg} George Washington Bridge
+        + {:.eg} JFK Airport
+    + Names of meals normally do not take an article:
+        + {:.eg} Did you have breakfast this morning?
+        + {:.eg} I'll have fruit for lunch.
+        + {:.eg} Let's go out for dinner tonight.
+        + {:.exception} But if there is an adjective before the name of the meal or a phrase or clause after it, an article is used:
+            + {:.eg} The breakfast that they served was fabulous.
+            + {:.eg} I had a quick lunch at Wendy's. 
+            + {:.eg} That was the most delicious dinner I've had in a while.
+    + Names of days, months, seasons and holidays are normally not preceded by an article:
+        + {:.eg} on Monday
+        + {:.eg} in March
+        + {:.eg} in summer
+        + {:.eg} at Christmas
+    + Names of certain parts of the day are normally not preceded by an article (with the exception of in the morning/afternoon/evening):
+        + {:.eg} at noon
+        + {:.eg} at night
+        + {:.eg} at midnight
+        + {:.eg} before dusk
+        + {:.eg} after sunset
+        + {:.eg} at sunrise
+        + {:.exception} But if there is an adjective before the noun or a phrase or clause after it, the noun usually takes an article:
+            + {:.eg} on the Monday of that week
+            + {:.eg} the summer I met my future husband
+            + {:.eg} the best Christmas I've ever had
+            + {:.eg} it was a beautiful sunset 
+    + Names of pubs, restaurants etc. that use the possessive 's construction do not take an article:
+        + {:.eg} We went to Maggie's last night.
+        + {:.eg} Let's meet at Jack's Diner.
+    + Names of sports, games and activities are not preceded by an article:
+        + {:.eg} I love swimming.
+        + {:.eg} Rummy is definitely much more difficult than solitaire.
+        + {:.eg} She suggested playing Activity.
 
-> 英語でものを考えるときは、まず冠詞の有無で意味的カテゴリーを整えて、それから名詞を探すという思考プロセスを辿ります。
+    + Nouns that refer to certain places and institutions when we are talking about the purpose they are used for:
+        + {:.eg}　The children are at school. (studying)
+        + {:.eg}　What time do you usually go to bed? (to sleep) 
+        + {:.eg}　The murderer was sentenced to 10 years in prison. (as a punishment)
+        + {:.exception} But if we mean the place (usually the building) itself, the definite article the is used:
+            + {:.eg}　He went to the bed to check if the children were sleeping.
+            + {:.eg}　In 1985, there was a fire in the school.
+            + {:.eg}　The prison is outside of the city.
 
-> 例えば chicken という単語が出てこなくて言葉に詰まったとしましょう。まず、日本語頭脳の思考プロセスで話すとこうなります。
-> （えーと、トリ肉、それは英語だと a をつけずに言うから）chicken!
-> （えーと、ニワトリ、それが一匹だから）a chicken!
-> 対して、英語のネイティブスピーカーの思考プロセスではこのように発声されます。
-> （数えられないモノ）uh...(数えられないモノ）uh...（そのモノの名前はトリ肉だ）chicken!
-> （一つのモノ）a...（一つのモノ）a...（そのモノの名前はニワトリだ）a chicken!
-> （あの）the, uh...（あの）the, uh...（いま the で限定されるモノの名前はニワトリだ）the chicken!
+    + Typically, the article the is not used before the names of countries and territories:
+        + {:.eg}　Our flight to China was canceled.
+        + {:.exception} However, the is used before countries whose names are plural in form:
+            + {:.eg}　Have you ever been to the Netherlands?
+        + {:.exception}　The is also used with countries whose names include the words states, kingdom, or republic:
+            + {:.eg}　My sister lives in the United States.
+            + {:.eg}　My brother lives in the United Kingdom.
 
----
-[^1]: ["Articles: Grammar Rules \| Grammarly"](https://www.grammarly.com/blog/articles/)
-[^2]: ["なぜ英語では、数や冠詞の概念が重要なのでしょうか？ \| 教えて!goo"](https://oshiete.goo.ne.jp/qa/9582457.html)
+#### Other Rules for the Geographical Use of the Definite Article, The
+
+Do not use the before the names of | |
+:----------- |:-----------
+continents | North America, Asia, Africa
+mountains | Mount Rushmore, Mount Everest
+islands | Saint Lucia, Antigua, Grenada
+streets | Broad Street, Wilson Avenue
+cities and towns | Birmingham, Seattle, Las Vegas
+states | Alabama, Washington, Nevada
+lakes | Lake Erie, Lake Kissimmee, Lake Rabun
+
+Do use the before the names of | |
+:----------- |:-----------
+points on the globe | the Equator, the North Pole
+mountain ranges | the Smoky Mountains, the Andes
+island chains | the Florida Keys, the Pacific Islands
+geographical areas | the East, the Midwest
+rivers, seas, and oceans | the Mississippi River, the Atlantic Ocean, the Nile River
+deserts and peninsulas | the Mojave Desert, the Balkan Peninsula
+groups of lakes | the Great Lakes
+
+
+

@@ -1,0 +1,18 @@
+
+.eg {
+  font-style: italic;
+  color: #00A381;
+}
+
+.exception {
+  color: #E87A90;
+}
+
+.exception .eg {
+  color: #E87A90;
+}
+
+.eg
+ {
+ list-style-type: none;
+}
