@@ -29,6 +29,17 @@ particular thing[^1].
     + names include the words states, kingdom, or republic:
         + My sister lives in the United States.
 
++ Zero Articles
+    + Names of places and institutions which consist of a proper name and another noun do not take an article:
+        + {:.eg} 
+    + Nouns that refer to certain places and institutions when we are talking about the purpose they are used for:
+        + {:.eg}
+        + But if we mean the place (usually the building) itself, the definite article the is used:
+            + {:.eg}
+    + Names of meals normally do not take an article:
+        + {:.eg}
+        + But if there is an adjective before the name of the meal or a phrase or clause after it, an article is used:
+            + {:.eg}
+
 ---
 [^1]: ["Articles: Grammar Rules | Grammarly"](https://www.grammarly.com/blog/articles/)
-
