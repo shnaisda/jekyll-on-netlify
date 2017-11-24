@@ -5,7 +5,7 @@ title: '冠詞学びなおし: 無冠詞'
 date: 2017-11-24T00:00:00.000Z
 categories: blog
 ---
-定冠詞と不定冠詞の用法は分かっている（つもり）だけれど、無冠詞がさっぱりなので例文を引用してまとめた[[^1]][[^2]]。抽象化の機能は分かりやすいから覚えられたれど、その他例外とか分類分けが複雑すぎて、考え方を身に付けるよりもパターンを覚えた方が有効と思った次第。とりあえず、適当な本を読んで、気になった文章を取り上げて、使われている冠詞の意図を意識できているかチェックする、が無難？と考えていたら以下の記事を発見：
+定冠詞と不定冠詞の用法は分かっている（つもり）だけれど、無冠詞がさっぱりなので例文を引用してまとめた[[^1]][[^2]]。抽象化の機能は分かりやすいから覚えられたれど、その他例外とか分類分けが複雑すぎて、ロジックを身に付けるよりもパターンを覚えた方が有効と思った次第。とりあえず、適当な本を読んで、気になった文章を取り上げて、使われている冠詞の意図を意識できているかチェックする、が無難？と考えていたら以下の記事を発見：
 
 > For those looking for exercises or drills, one of the easiest things to do would be to find a newspaper story, remove the articles, wait a day or two, and then try to add the articles back into the writing. This will expose you to authentic, original documents written in English and give you practice at the same time. Spending a few minutes every day noticing where the zero article is used and practicing drills will help you speak English in a way that is natural, correct, and native-like[^3].
 
