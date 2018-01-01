@@ -2,7 +2,7 @@
 layout: post
 published: true
 title: 'JekyllをHerokuにデプロイした'
-date: 2017-12-31
+date: 2017-12-31 00:00:00 +0900
 category: blog
 categoriesTree:
   lvl0: ["commonplaces"]

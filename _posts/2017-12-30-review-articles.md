@@ -2,7 +2,7 @@
 layout: post
 published: true
 title: '冠詞のおさらい'
-date: 2017-12-30
+date: 2017-12-30 00:00:00 +0900
 category: blog
 categoriesTree:
   lvl0: ["blog"]
