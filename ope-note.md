@@ -1,12 +1,18 @@
 ---
-layout: default
+layout: page
 ---
 
 # 運用メモ
 
 ## Git Clone
+
 ~~~ sh 
-$ git clone https://git.heroku.com/jekyllog.git
+$ heroku login
+~~~ 
+
+~~~ sh 
+$ heroku git:clone -a jekyllog
+$ cd jekyllog
 ~~~ 
 
 ## 投稿
@@ -30,9 +36,9 @@ categoriesTree:
 ... post content
 ~~~ 
 
-1. ポストをpushする。
+1. デプロイする。
 ~~~ sh
-$ git add _posts
-$ git commit -m "Update posts"
+$ git add .
+$ git commit -m "Update files"
 $ git push heroku master
 ~~~ 

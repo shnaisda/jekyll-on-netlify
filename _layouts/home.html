@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+  <section class="section">
+  <div class="container">
 
 <div class="columns">
 <div class="column is-10">
@@ -15,5 +17,69 @@ layout: default
 </div><!-- .column .is-2 -->
 </div><!-- .columns -->
 
-<!-- Including InstantSearch.js library and styling -->
-{% include algolia.html %}
+  </div><!-- .container -->
+  </section>
+
+ {% include footer.html %}
+
+<!-- instantsearch.js -->
+<script src="//cdn.jsdelivr.net/npm/instantsearch.js@2.3/dist/instantsearch.min.js"></script>
+<!-- moment.js -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+<script>
+const hitTemplate = function(data) {
+  // console.log(Object.keys(data));
+  const date = moment.unix(data.date).format('MMM D, YYYY');
+  const url = data.url;
+  const title = data._highlightResult.title.value;
+  const excerpt_text = data._highlightResult.excerpt_text.value;
+  const categoriesTree = data.categoriesTree;
+  /* get hierarchical categories */
+  if (categoriesTree) {
+    arr = Object.keys(categoriesTree).sort();
+    lastidx = arr[arr.length - 1];
+    breadcrumb = categoriesTree[lastidx].join(', ');
+  }
+  return `
+    <section class="hero is-info">
+      <div class="hero-body">
+      <h1 class="title"><a href="${url}">${title}</a></h1>
+      <h2 class="subtitle">${date} | ${breadcrumb}</h2>
+      </div>
+    </section>
+    <div class=" card-content">${excerpt_text}</div>
+  `;
+}
+const search = instantsearch({
+  appId: '{{ site.algolia.application_id }}',
+  apiKey: '{{ site.algolia.read_only_api_key }}',
+  indexName: '{{ site.algolia.index_name }}',
+  urlSync: true /* synchronize the current search with the browser URL so that copied and shared by elsewhere. */
+});
+search.addWidget(instantsearch.widgets.hits({
+  container: '#hits',
+  cssClasses: {
+    item: 'card'
+  },
+  templates: {
+    empty: 'No results',
+    item: hitTemplate
+  }
+}));
+search.addWidget(instantsearch.widgets.searchBox({
+  container: '#search-box',
+  placeholder: 'Search for posts',
+  poweredBy: true
+}));
+search.addWidget(instantsearch.widgets.pagination({
+  container: '#pagination',
+}));
+search.addWidget(instantsearch.widgets.hierarchicalMenu({
+  container: '#hierarchical-categories',
+  attributes: ['categoriesTree.lvl0', 'categoriesTree.lvl1', 'categoriesTree.lvl2'],
+  templates: {
+    header: '<span class="mdi mdi-library-books mdi-18px"> Categories</span>'
+  }
+}));
+search.start();
+</script>
