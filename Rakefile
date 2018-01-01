@@ -1,4 +1,3 @@
 task "assets:precompile" do
-
-  exec("jekyll build")
+  `(bundle exec jekyll algolia && jekyll build)`
 end
