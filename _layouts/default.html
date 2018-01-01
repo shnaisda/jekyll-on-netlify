@@ -13,11 +13,11 @@
   {% if page.description %}
   <meta name="description" content="{{ page.description}}" />
   {% endif %}
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
-  <link rel="stylesheet" href="//cdn.materialdesignicons.com/2.1.19/css/materialdesignicons.min.css">
+  <link rel="preload" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css" as="style" onload="this.rel='stylesheet'">
+  <link rel="preload" href="//cdn.materialdesignicons.com/2.1.19/css/materialdesignicons.min.css" as="style" onload="this.rel='stylesheet'">
 
-  <link rel="stylesheet" href="/assets/css/syntax.css">
-  <link rel="stylesheet" href="/assets/css/type.css">
+  <link rel="preload" href="/assets/css/syntax.css" as="style" onload="this.rel='stylesheet'">
+  <link rel="preload" href="/assets/css/type.css" as="style" onload="this.rel='stylesheet'">
   <style>
   .jumbotron { 
     padding: 30px;
