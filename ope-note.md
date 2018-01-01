@@ -4,18 +4,15 @@ layout: default
 
 # 運用メモ
 
-## Git Clone
+## クローンする。
 
 ~~~ sh 
 $ heroku login
-~~~ 
-
-~~~ sh 
 $ heroku git:clone -a jekyllog
 $ cd jekyllog
 ~~~ 
 
-## 投稿
+## 投稿する。
 1. 記事を作成する。ファイル名は命名規則に従う。
 ~~~ 
 YEAR-MONTH-DAY-title.md
@@ -41,4 +38,11 @@ categoriesTree:
 $ git add .
 $ git commit -m "Update files"
 $ git push heroku master
-~~~ 
+~~~
+
+## 参考にしたページ。
+
+### Markdown
+* [kramdown Syntax][id1]
+
+[id1]:https://kramdown.gettalong.org/syntax.html
