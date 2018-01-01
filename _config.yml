@@ -29,10 +29,6 @@ plugins:
   - jekyll-feed
   - jekyll-algolia
 
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  
 # https://github.com/algolia/jekyll-algolia
 # $ bundle exec jekyll algolia
 # related file: ./_algolia_api_key
@@ -50,3 +46,15 @@ algolia:
     highlightPreTag: '<em class="search-highlight">'
     highlightPostTag: '</em>'
     attributesForFaceting: ['categoriesTree.lvl0', 'categoriesTree.lvl1', 'categoriesTree.lvl2']
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+   - Gemfile
+   - Gemfile.lock
+   - node_modules
+   - vendor/bundle/
+   - vendor/cache/
+   - vendor/gems/
+   - vendor/ruby/
