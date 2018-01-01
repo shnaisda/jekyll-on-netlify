@@ -24,7 +24,7 @@ categoriesTree:
 1. Application IDと読み取り用のAPI Keyを確認する。
 ![algolia-api-keys-view](/assets/img/algolia-api-keys-view.png)
 
-1. 書き込み用のAPI Keyを作成する。各操作権限にチェックをつける。
+1. 書き込み用のAPI Keyを作成する。各操作権限にチェックをつける(画像だと見切れてる)。
 ![algolia-new-key-view.png](/assets/img/algolia-new-key-view.png)
 
 1. `./Gemfile`にプラグインを追記する。
@@ -113,11 +113,11 @@ search.start();
 * [InstantSearch.js][linkid1]
 * [API Reference \| Algolia Documentation][linkid2]
 
-Index書き込みの設定は`./_config.yml`で設定できる。
+書き込みの設定は`./_config.yml`で設定できる。
 
 ~~~ yml {% raw %}
 algolia:
-  nodes_to_index: 'p, pre'
+  nodes_to_index: 'p'
   settings:
     attributesToHighlight: ['title', 'content']
     highlightPreTag: '<em class="search-highlight">'
@@ -150,11 +150,31 @@ Jekyll::Hooks.register :site, :pre_render do |site, payload|
 end
 ~~~
 
+## HerokuにPushする
+
+前提: [JekyllをHerokuにデプロイした]({% post_url 2017-12-31-jekyll-and-heroku %})。  
+HerokuのaddonでもAlgoliaがサポートされている[^3]けど、Rails向けのドキュメントしか見つからなかった。
+
+1. `Rakefile`を書き換える。
+~~~ ruby
+task "assets:precompile" do
+  `(bundle exec jekyll algolia && jekyll build)`
+end
+~~~
+
+1. ファイルをpushする。
+~~~ sh
+$ git add .
+$ git commit -m "Update Rakefile"
+$ git push heroku master
+~~~ 
+
 以上。
 
 --- 
 [^1]: ["algolia/jekyll-algolia: Add fast and relevant search to your Jekyll site"](https://github.com/algolia/jekyll-algolia)
 [^2]: ["Algolia for Jekyll \| Search your Jekyll content with Algolia"](https://community.algolia.com/jekyll-algolia/blog.html)
+[^3]: ["Algolia Realtime Search \| Heroku Dev Center"](https://devcenter.heroku.com/articles/algoliasearch)
 
 [linkid1]:https://community.algolia.com/instantsearch.js/ 
 [linkid2]:https://www.algolia.com/doc/api-reference/
