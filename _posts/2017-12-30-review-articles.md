@@ -2,7 +2,7 @@
 layout: post
 published: true
 title: '冠詞のおさらい'
-date: {}
+date: 2017-12-30
 category: blog
 categoriesTree:
   lvl0: ["blog"]
