@@ -29,8 +29,7 @@ plugins:
   - jekyll-feed
   - jekyll-algolia
 
-exclude: 
-  - Rakefile
+exclude:
   - Gemfile
   - Gemfile.lock
   
