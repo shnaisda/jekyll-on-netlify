@@ -2,7 +2,7 @@
 layout: post
 published: true
 title: 'JekyllにAlgoliaを追加した'
-date: 2018-01-01 00:00:00 +0900
+date: 2018-01-01
 category: blog
 categoriesTree:
   lvl0: ["commonplaces"]
