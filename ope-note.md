@@ -40,9 +40,13 @@ $ git commit -m "Update files"
 $ git push heroku master
 ~~~
 
-## 参考にしたページ。
+## 参考。
 
 ### Markdown
 * [kramdown Syntax][id1]
 
+### Jekyll
+* [Jekyll Tips][id2]
+
 [id1]:https://kramdown.gettalong.org/syntax.html
+[id2]:http://jekylltips-ja.github.io/
