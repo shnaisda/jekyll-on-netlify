@@ -1,13 +1,19 @@
 ---
 layout: default
 ---
-<div class="home">
-  {{ content }}
 
-  <h1 class="page-heading">Posts</h1>
-  <ul class="post-list">
-    {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> > <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+<div class="columns">
+<div class="column is-10">
+  <div id="search-box"><!-- SearchBox widget will appear here --></div>
+  <div id="hits"><!-- Hits widget will appear here --></div>
+  <div id="pagination"><!-- Pagination widget will appear here --></div>
+</div><!-- .column .is-10 -->
+<div class="column is-2">
+  <nav class="panel">
+    <div id="hierarchical-categories"></div>
+  </nav>
+</div><!-- .column .is-2 -->
+</div><!-- .columns -->
+
+<!-- Including InstantSearch.js library and styling -->
+{% include algolia.html %}

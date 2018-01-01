@@ -15,35 +15,34 @@
 # in the templates via {{ site.myvariable }}.
 title: Log 
 email: shnaisda@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+ blah, blah, blah
+baseurl: "" # the subpath of your site, e.g. /blog
+url: http://localhost:4000 # the base hostname & protocol for your site, e.g. http://localhost:4000
+# exclude :categories from permalink due to confliction with algolia panel
 
-# Build settings
+# Conversion
 markdown: kramdown
-theme: jekyll-theme-minimal
+incremental: true
 
-# Proce.io settings
-prose:
-  rooturl: '_posts'
-  siteurl: 'https://shnaisda.github.io/'
-  media: 'media'
-  metadata:
-    _posts:
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "blog"
-      - name: "title"
-        field:
-          element: "text"
-          value: ""
-      - name: "tags"
-        field:
-          element: "multiselect"
-          label: "Add Tags"
-          placeholder: "Choose Tags"
-          options:
-            - name: "調べもの"
-              value: "research"
-            - name: "英語"
-              value: "english"
-            - name: "ノート"
-              value: "note"
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-algolia
+
+# https://github.com/algolia/jekyll-algolia
+# $ bundle exec jekyll algolia
+# related file: ./_algolia_api_key
+algolia:
+  application_id: 'OIQLXW0BRS'
+  index_name: 'dev_idx0'
+  read_only_api_key: '6e17f91a7c6e94faf362796903dc962e'
+  excluded_files:
+    - 404.html
+    - index.html
+  nodes_to_index: 'p'
+  settings:
+    attributesToHighlight: ['title', 'excerpt_text']
+    highlightPreTag: '<em class="search-highlight">'
+    highlightPostTag: '</em>'
+    attributesForFaceting: ['categoriesTree.lvl0', 'categoriesTree.lvl1', 'categoriesTree.lvl2']
