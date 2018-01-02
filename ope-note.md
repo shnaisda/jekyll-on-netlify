@@ -12,11 +12,11 @@ $ heroku git:clone -a jekyllog
 $ cd jekyllog
 ~~~ 
 
+## プレビュー
+`bundle exec jekyll s`
+
 ## 投稿する。
-1. 記事を作成する。ファイル名は命名規則に従う。
-~~~ 
-YEAR-MONTH-DAY-title.md
-~~~ 
+1. 記事を作成する。ファイル名は命名規則`./_posts/YEAR-MONTH-DAY-title.md`に従う。
 
 1. 作成したファイルにMetaデータを挿入する。コメントアウト以外は必須。
 ~~~ yml

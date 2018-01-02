@@ -7,10 +7,10 @@ category: blog
 categoriesTree:
   lvl0: ["commonplaces"]
   lvl1: ["commonplaces > web"]
-  lvl2: ["commonplaces > web > jekyll", "commonplaces > web > algolia"]
+  lvl2: ["commonplaces > web > jekyll"]
 ---
 
-下記リンク先がきっかけでAlgoliaを知った。
+経緯：下記リンク先がきっかけでAlgoliaを知った。
 
 [13 Steps to a Faster Jekyll Website][linkid3]
 
@@ -32,7 +32,7 @@ categoriesTree:
 gem 'jekyll-algolia', '~> 1.0'
 ~~~ 
 
-1. `./_config.yml`に`application_id`と`index_name`を追記する。
+1. `./_config.yml`にパラメータを追記する。
 ~~~ yml
 algolia:
   application_id: 'your_application_id'
@@ -152,7 +152,7 @@ end
 
 ## HerokuにPushする
 
-前提: [JekyllをHerokuにデプロイした]({% post_url 2017-12-31-jekyll-and-heroku %})。  
+前提：[JekyllをHerokuにデプロイした]({% post_url 2017-12-31-jekyll-and-heroku %})。  
 HerokuのaddonでもAlgoliaがサポートされている[^3]けど、Rails向けのドキュメントしか見つからなかった。
 
 1. `Rakefile`を書き換える。

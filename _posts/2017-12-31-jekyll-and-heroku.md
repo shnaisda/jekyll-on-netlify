@@ -7,7 +7,7 @@ category: blog
 categoriesTree:
   lvl0: ["commonplaces"]
   lvl1: ["commonplaces > web"]
-  lvl2: ["commonplaces > web > jekyll", "commonplaces > web > heroku"]
+  lvl2: ["commonplaces > web > jekyll"]
 ---
 手順はherokuのブログを参考にした[^1]。
 
