@@ -12,7 +12,7 @@ const hitTemplate = function(data) {
   const date = moment.unix(data.date).format('MMM D, YYYY');
   const url = data.url;
   const title = data._highlightResult.title.value;
-  const excerpt_text = data._highlightResult.excerpt_text.value;
+  const content = data._highlightResult.content.value;
   const categoriesTree = data.categoriesTree;
   /* get hierarchical categories */
   if (categoriesTree) {
@@ -27,7 +27,7 @@ const hitTemplate = function(data) {
       <h2 class="subtitle">${date} | ${breadcrumb}</h2>
       </div>
     </section>
-    <div class=" card-content">${excerpt_text}</div>
+    <div class=" card-content">${content}</div>
   `;
 }
 const search = instantsearch({
