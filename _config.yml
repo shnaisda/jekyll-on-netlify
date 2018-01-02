@@ -37,10 +37,10 @@ algolia:
   application_id: 'OIQLXW0BRS'
   index_name: 'dev_idx0'
   read_only_api_key: '6e17f91a7c6e94faf362796903dc962e'
-  excluded_files:
+  files_to_exclude:
     - 404.html
-    - index.html
-    - ope-note.html
+    - index.md
+    - ope-note.md
   nodes_to_index: 'p'
   settings:
     attributesToHighlight: ['title', 'excerpt_text']

@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: 'JekyllにAlgoliaを追加した'
+title: 'JekyllにAlgoliaを追加した備忘録'
 date: 2018-01-01
 category: blog
 categoriesTree:

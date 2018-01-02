@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: 'JekyllをHerokuにデプロイした'
+title: 'JekyllをHerokuにデプロイした備忘録'
 date: 2017-12-31
 category: blog
 categoriesTree:
