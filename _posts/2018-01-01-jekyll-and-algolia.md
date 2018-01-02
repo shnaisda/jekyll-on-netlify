@@ -124,32 +124,6 @@ algolia:
     highlightPostTag: '</em>'
 {% endraw %}~~~ 
 
-もしくは、jekyll-algoliaを使用しないで、ビルド前にプラグインをかませる。`_plugins/algolia.rb`を作成する。ただ、jekyll-algoliaがしてくれていた部分を考えないといけないから、いろいろめんどくさくなる。レコードの同期とか。
-
-~~~ ruby
-require 'rubygems'
-require 'algoliasearch'
-
-module RunIndexing
-  def self.process(site, payload)
-    return if @processed
-    Algolia.init application_id: "your_application_id",
-        api_key: "your_write_api_key"
-    index = Algolia::Index.new("your_index_name")
-    index.set_settings({
-    # ... 
-    })
-    index.add_objects( [] )
-    @processed = true
-  end
-end
-
-Jekyll::Hooks.register :site, :pre_render do |site, payload|
-  puts "Running ruby script before rendering..."
-  RunIndexing.process(site, payload)
-end
-~~~
-
 ## HerokuにPushする
 
 前提：[JekyllをHerokuにデプロイした]({% post_url 2017-12-31-jekyll-and-heroku %})。  
