@@ -12,7 +12,6 @@ const hitTemplate = function(data) {
   const date = moment.unix(data.date).format('MMM D, YYYY');
   const url = data.url;
   const title = data._highlightResult.title.value;
-  const content = data._highlightResult.content.value;
   const categoriesTree = data.categoriesTree;
   /* get hierarchical categories */
   if (categoriesTree) {
@@ -21,13 +20,10 @@ const hitTemplate = function(data) {
     breadcrumb = categoriesTree[lastidx].join(', ');
   }
   return `
-    <section class="hero is-info">
-      <div class="hero-body">
-      <h1 class="title"><a href="${url}">${title}</a></h1>
-      <h2 class="subtitle">${date} | ${breadcrumb}</h2>
-      </div>
+    <section>
+      <h2><a href="${url}">${title}</a></h2>
+      <h4>${date} | ${breadcrumb}</h4>
     </section>
-    <div class=" card-content">${content}</div>
   `;
 }
 const search = instantsearch({

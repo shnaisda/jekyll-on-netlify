@@ -7,42 +7,40 @@
   {% if page.title %}
     {{ page.title }}
   {% else %}
-    Default Page Title
+    {{ site.title }}
   {% endif %}
   </title>
   {% if page.description %}
   <meta name="description" content="{{ page.description}}" />
   {% endif %}
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
   <link rel="stylesheet" href="//cdn.materialdesignicons.com/2.1.19/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/gumby/2.6.4/css/gumby.min.css">
   <link rel="stylesheet" href="/assets/css/syntax.css">
-  <link rel="stylesheet" href="/assets/css/type.css">
   <style>
-  .jumbotron { 
-    padding: 30px;
-    background-color: #F5F5F5;
-  }
+    .container {
+      padding: 1rem;
+    }
   </style>
 
   </head>
   <body>
-  <header class="jumbotron">
-    <nav class="level">
-    <h1 class="title is-1 level-item has-text-centered">
-    <a href="/">{{ site.title }}</a>
-    </h1>
-    <p class="level-item has-text-centered">
-    <a href="{{'./ope-note' | relative_url}}">運用メモ</a>
-    </p>
-    </nav>
+  <header>
+    <div class="container">
+      <h1><a href="/">{{ site.title }}</a></h1>
+      <p><a href="{{'./ope-note' | relative_url}}">運用メモ</a></p>
+    </div>
   </header>
 
-  <section class="section">
   <div class="container">
   {{ content }}
   </div><!-- .container -->
-  </section>
   
-  {% include footer.html %}
+  <footer>
+    <div class="container">
+    {% if site.email %}
+    <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+    {% endif %}
+    </div>
+  </footer>
   </body>
 </html>

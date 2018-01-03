@@ -10,13 +10,14 @@ categoriesTree:
   lvl2: ["commonplaces > web > jekyll"]
 ---
 
-経緯：下記リンク先がきっかけでAlgoliaを知った。
-
-[13 Steps to a Faster Jekyll Website][linkid3]
-
 ## プラグインを追加する(レコードの書き込み)
 
-手順は結構手探り。大元はjekyll-algoliaプラグインのGithubだけど情報が少ない[^1]。
+Jekyll用のプラグインがあるので利用する[^1]。
+
+1. `./Gemfile`にプラグインを追記する。
+~~~ sh
+gem 'jekyll-algolia', '~> 1.0'
+~~~ 
 
 1. Algoliaアカウントを作成して、Indexを作成する。
 ![algolia-indices-view](/assets/img/algolia-indices-view.png)
@@ -26,11 +27,6 @@ categoriesTree:
 
 1. 書き込み用のAPI Keyを作成する。各操作権限にチェックをつける(画像だと見切れてる)。
 ![algolia-new-key-view.png](/assets/img/algolia-new-key-view.png)
-
-1. `./Gemfile`にプラグインを追記する。
-~~~ sh
-gem 'jekyll-algolia', '~> 1.0'
-~~~ 
 
 1. `./_config.yml`にパラメータを追記する。
 ~~~ yml

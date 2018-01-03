@@ -13,6 +13,7 @@ $ cd jekyllog
 ~~~ 
 
 ## プレビュー
+`bundle exec jekyll algolia`
 `bundle exec jekyll s`
 
 ## 投稿する。
