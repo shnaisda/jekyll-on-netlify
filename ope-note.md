@@ -12,9 +12,10 @@ $ heroku git:clone -a jekyllog
 $ cd jekyllog
 ~~~ 
 
-## プレビュー
-`bundle exec jekyll algolia`
-`bundle exec jekyll s`
+## ローカル
+
+* `bundle exec jekyll algolia`
+* `bundle exec jekyll s`
 
 ## 投稿する。
 1. 記事を作成する。ファイル名は命名規則`./_posts/YEAR-MONTH-DAY-title.md`に従う。
