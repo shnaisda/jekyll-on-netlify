@@ -219,7 +219,9 @@ Later last lines added for formating:
   line-height: 1.45;
   border-radius: 3px;
   overflow: auto;
-  word-wrap: normal;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  text-align: justify;
 }
 
 .highlighter-rouge {
