@@ -220,8 +220,6 @@ Later last lines added for formating:
   border-radius: 3px;
   overflow: auto;
   min-width: 300px;
-  overflow-x: hidden;
-  overflow-y: scroll;
 }
 
 .highlighter-rouge {
