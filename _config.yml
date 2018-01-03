@@ -47,12 +47,6 @@ algolia:
     highlightPreTag: '<em class="search-highlight">'
     highlightPostTag: '</em>'
     attributesForFaceting: ['categoriesTree.lvl0', 'categoriesTree.lvl1', 'categoriesTree.lvl2']
-
-# https://github.com/penibelst/jekyll-compress-html
-# related file: ./_layouts/compress.html
-compress_html:
- clippings: all
- endings: all
  
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
