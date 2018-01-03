@@ -218,6 +218,7 @@ Later last lines added for formating:
   font-size: 85%;
   line-height: 1.45;
   border-radius: 3px;
+  overflow: auto;
 }
 
 .highlighter-rouge {
