@@ -16,8 +16,7 @@
 
 title: Log 
 email: shnaisda@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
- blah, blah, blah
+description: 個人的な備忘録をまとめるBlog。
 baseurl: "" # the subpath of your site, e.g. /blog
 url: http://localhost:4000 # the base hostname & protocol for your site, e.g. http://localhost:4000
 

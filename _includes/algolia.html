@@ -21,8 +21,8 @@ const hitTemplate = function(data) {
   }
   return `
     <section>
-      <h2><a href="${url}">${title}</a></h2>
-      <h4>${date} | ${breadcrumb}</h4>
+      <h2 class="title"><a href="${url}">${title}</a></h2>
+      <h4 class="subtitle">${date} | ${breadcrumb}</h4>
     </section>
   `;
 }
@@ -30,7 +30,7 @@ const search = instantsearch({
   appId: '{{ site.algolia.application_id }}',
   apiKey: '{{ site.algolia.read_only_api_key }}',
   indexName: '{{ site.algolia.index_name }}',
-  urlSync: true /* synchronize the current search with the browser URL so that copied and shared by elsewhere. */
+  urlSync: true
 });
 search.addWidget(instantsearch.widgets.hits({
   container: '#hits',
@@ -55,6 +55,18 @@ search.addWidget(instantsearch.widgets.hierarchicalMenu({
   attributes: ['categoriesTree.lvl0', 'categoriesTree.lvl1', 'categoriesTree.lvl2'],
   templates: {
     header: '<span class="mdi mdi-library-books mdi-18px"> Categories</span>'
+  }
+}));
+search.addWidget(instantsearch.widgets.numericRefinementList({
+  container: '#calendar',
+  attributeName: 'date',
+  options: [
+    {name: 'All'},
+    {start:1514764800, name: '2018'},
+    {start:1483228800, end:1514764799, name: '2017'}
+  ],
+  templates: {
+    header: '<span class="mdi mdi-calendar-range mdi-18px"> Calendar</span>'
   }
 }));
 search.start();
