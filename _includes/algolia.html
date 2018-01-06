@@ -5,27 +5,9 @@
 <script async src="//cdn.jsdelivr.net/npm/instantsearch.js@2.3/dist/instantsearch.min.js"></script>
 <!-- moment.js -->
 <script async src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+<script async src="/assets/js/app.js"></script>
 <script>
 window.onload = function() {
-const hitTemplate = function(data) {
-  // console.log(Object.keys(data));
-  const date = moment.unix(data.date).format('MMM D, YYYY');
-  const url = data.url;
-  const title = data._highlightResult.title.value;
-  const categoriesTree = data.categoriesTree;
-  /* get hierarchical categories */
-  if (categoriesTree) {
-    arr = Object.keys(categoriesTree).sort();
-    lastidx = arr[arr.length - 1];
-    breadcrumb = categoriesTree[lastidx].join(', ');
-  }
-  return `
-    <section>
-      <h2 class="title"><a href="${url}">${title}</a></h2>
-      <h4 class="subtitle">${date} | ${breadcrumb}</h4>
-    </section>
-  `;
-}
 const search = instantsearch({
   appId: '{{ site.algolia.application_id }}',
   apiKey: '{{ site.algolia.read_only_api_key }}',
@@ -62,8 +44,8 @@ search.addWidget(instantsearch.widgets.numericRefinementList({
   attributeName: 'date',
   options: [
     {name: 'All'},
-    {start:1514764800, name: '2018'},
-    {start:1483228800, end:1514764799, name: '2017'}
+    {start:1514732400, name: '2018'},
+    {start:1483228800, end:1514732399, name: '2017'}
   ],
   templates: {
     header: '<span class="mdi mdi-calendar-range mdi-18px"> Calendar</span>'

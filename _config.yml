@@ -29,6 +29,11 @@ plugins:
   - jekyll-feed
   - jekyll-algolia
 
+compress_html:
+  clippings: all
+  comments:  ["<!-- ", " -->"]
+  endings:   all
+  
 # https://github.com/algolia/jekyll-algolia
 # $ bundle exec jekyll algolia
 # related file: ./_algolia_api_key
@@ -42,7 +47,8 @@ algolia:
     - ope-note.md
   nodes_to_index: 'p'
   settings:
-    attributesToHighlight: ['title', 'content']
+    attributesToHighlight: ['title']
+    attributesToSnippet: ['content:80']
     highlightPreTag: '<em class="search-highlight">'
     highlightPostTag: '</em>'
     attributesForFaceting: ['categoriesTree.lvl0', 'categoriesTree.lvl1', 'categoriesTree.lvl2']
