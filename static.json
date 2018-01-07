@@ -3,7 +3,7 @@
   "https_only": true,
   "root": "_site/",
   "headers": {
-    "/": {
+    "/assets/**": {
       "Cache-Control": "public, max-age=512000"
     }
   }
