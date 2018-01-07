@@ -44,7 +44,7 @@ algolia:
   files_to_exclude:
     - 404.html
     - index.md
-    - ope-note.md
+    - README.md
   nodes_to_index: 'p'
   settings:
     attributesToHighlight: ['title']
