@@ -6,9 +6,9 @@
 <!-- moment.js -->
 <script async src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
 <!-- instantsearch widgets config and style -->
-<script defer src="/assets/js/ais-widgets.js">var instantsearch = instantsearch;</script>
+<script defer src="/assets/js/ais-widgets.js"></script>
 <link rel="stylesheet" href="/assets/css/ais-widgets.css">
-<script>
+<script defer>
 window.onload = function() {
   const search = instantsearch({
     appId: '{{ site.algolia.application_id }}',
