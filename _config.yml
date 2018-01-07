@@ -55,7 +55,7 @@ algolia:
 
 # Handling Reading
 include:
-   - .htaccess
+   - _headers
 
 exclude:
    - Gemfile
