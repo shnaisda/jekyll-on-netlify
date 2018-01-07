@@ -9,8 +9,8 @@
     "/assets/**": {
       "Cache-Control": "public, max-age=512000"
     },
-    "/assets/webfonts/*": {
-      "Access-Control-Allow-Origin": "*"
+    "**/*.css": {
+      "Cache-Control": "public, max-age=512000"
     }
   }
 }
