@@ -4,7 +4,13 @@
   "root": "_site/",
   "headers": {
     "/": {
+      "Cache-Control": "no-store, no-cache"
+    },
+    "/assets/**": {
       "Cache-Control": "public, max-age=512000"
+    },
+    "/assets/webfonts/*": {
+      "Access-Control-Allow-Origin": "*"
     }
   }
 }
