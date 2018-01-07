@@ -9,7 +9,7 @@
     "/assets/**": {
       "Cache-Control": "public, max-age=512000"
     },
-    "**/*.css": {
+    "\.(txt|xml|js|css)$": {
       "Cache-Control": "public, max-age=512000"
     }
   }
