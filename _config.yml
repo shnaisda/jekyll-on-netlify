@@ -23,12 +23,8 @@ url: http://localhost:4000 # the base hostname & protocol for your site, e.g. ht
 # Conversion
 markdown: kramdown
 kramdown:
-   input: GFM
    hard_wrap: true
 incremental: true
-
-sass:
-  style: compressed
 
 compress_html:
   clippings: all
