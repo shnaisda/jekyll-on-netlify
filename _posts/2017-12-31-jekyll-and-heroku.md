@@ -40,7 +40,7 @@ Creating app... done, aqueous-river-12946
 https://aqueous-river-12946.herokuapp.com/ | https://git.heroku.com/aqueous-river-12946.git
 ~~~ 
 
-1. 下記コマンドを実行する。サイト生成と静的サーバーの機能をそれぞれ与えているみたい。
+1. 下記コマンドを実行する。
 ~~~ sh
 $ heroku buildpacks:add heroku/ruby
 $ heroku buildpacks:add https://github.com/heroku/heroku-buildpack-static
