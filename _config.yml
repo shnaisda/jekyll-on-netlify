@@ -54,9 +54,6 @@ algolia:
     attributesForFaceting: ['categoriesTree.lvl0', 'categoriesTree.lvl1', 'categoriesTree.lvl2']
 
 # Handling Reading
-include:
-   - .htaccess
-
 exclude:
    - Gemfile
    - Gemfile.lock
