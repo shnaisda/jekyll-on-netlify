@@ -52,10 +52,11 @@ algolia:
     highlightPreTag: '<em class="search-highlight">'
     highlightPostTag: '</em>'
     attributesForFaceting: ['categoriesTree.lvl0', 'categoriesTree.lvl1', 'categoriesTree.lvl2']
- 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
+
+# Handling Reading
+include:
+   - .htaccess
+
 exclude:
    - Gemfile
    - Gemfile.lock
