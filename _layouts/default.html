@@ -40,19 +40,20 @@ layout: compress
   </footer>
   <script>
   
-  var createlink = function(href, as) {
+  var createlink = function(href) {
     var link = document.createElement("link");
     link.rel = "preload"; 
     link.href = href;
-    link.as = as;
+    link.as = "style";
     link.onload=function(){this.rel="stylesheet"};
     document.body.appendChild(link);
   };
-  createlink("//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css", "style");
-  createlink("//fonts.googleapis.com/css?family=Roboto","style");
-  createlink("//fonts.googleapis.com/icon?family=Material+Icons","style");
-  createlink("/assets/css/syntax.css","style");
-  createlink("/assets/css/style.css","style");
+  
+  createlink("//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css");
+  createlink("//fonts.googleapis.com/css?family=Roboto");
+  createlink("//fonts.googleapis.com/icon?family=Material+Icons");
+  createlink("/assets/css/syntax.css");
+  createlink("/assets/css/style.css");
   </script>
   </body>
 </html>
