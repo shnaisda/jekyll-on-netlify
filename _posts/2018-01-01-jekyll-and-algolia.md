@@ -32,7 +32,7 @@ gem 'jekyll-algolia', '~> 1.0'
 ~~~ yml
 algolia:
   application_id: 'your_application_id'
-  index_name:     'your_index_name'
+  index_name: 'your_index_name'
   read_only_api_key: 'your_read_only_api_key'
 ~~~ 
 
@@ -50,57 +50,55 @@ $ bundl exec jekyll algolia
 
 Algoliaのドキュメントを参考にした[^2]。
 
-`_includes/algolia.html`を作成して、Algolia関連の設定をまとめる。
+1. `_includes/algolia.html`を作成して、Algolia関連の設定をまとめる。
+    ~~~ html {% raw %}
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/instantsearch.js@2.3/dist/instantsearch.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/instantsearch.js@2.3/dist/instantsearch-theme-algolia.min.css">
+    <script src="//cdn.jsdelivr.net/npm/instantsearch.js@2.3/dist/instantsearch.min.js"></script>
+    <script>
+    const hitTemplate = function(data) {
+      const url = data.url;
+      const title = data._highlightResult.title.value;
+      return `
+        <h1><a href="${url}">${title}</a></h1>
+      `;
+    }
+    const search = instantsearch({
+      appId: '{{ site.algolia.application_id }}',
+      apiKey: '{{ site.algolia.read_only_api_key }}',
+      indexName: '{{ site.algolia.index_name }}',
+      urlSync: true
+    });
+    search.addWidget(instantsearch.widgets.hits({
+      container: '#hits',
+      templates: {
+        empty: 'No results',
+        item: hitTemplate
+      }
+    }));
+    search.addWidget(instantsearch.widgets.searchBox({
+      container: '#search-box',
+      placeholder: 'Search for posts',
+    }));
+    search.addWidget(instantsearch.widgets.pagination({
+      container: '#pagination',
+    }));
+    search.start();
+    </script>
+    <style>
+    /* ... */
+    </style>
+    {% endraw %}~~~ 
 
-~~~ html {% raw %}
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/instantsearch.js@2.3/dist/instantsearch.min.css">
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/instantsearch.js@2.3/dist/instantsearch-theme-algolia.min.css">
-<script src="//cdn.jsdelivr.net/npm/instantsearch.js@2.3/dist/instantsearch.min.js"></script>
-<script>
-const hitTemplate = function(data) {
-  const url = data.url;
-  const title = data._highlightResult.title.value;
-  return `
-    <h1><a href="${url}">${title}</a></h1>
-  `;
-}
-const search = instantsearch({
-  appId: '{{ site.algolia.application_id }}',
-  apiKey: '{{ site.algolia.read_only_api_key }}',
-  indexName: '{{ site.algolia.index_name }}',
-  urlSync: true
-});
-search.addWidget(instantsearch.widgets.hits({
-  container: '#hits',
-  templates: {
-    empty: 'No results',
-    item: hitTemplate
-  }
-}));
-search.addWidget(instantsearch.widgets.searchBox({
-  container: '#search-box',
-  placeholder: 'Search for posts',
-}));
-search.addWidget(instantsearch.widgets.pagination({
-  container: '#pagination',
-}));
-search.start();
-</script>
-<style>
-/* ... */
-</style>
-{% endraw %}~~~ 
+1. 上記スクリプトで指定したIDのタグにwidgetが挿入される。適当なページに下記を追加する。
+    ~~~ html {% raw %}
+    <div id="search-box"><!-- SearchBox widget will appear here --></div>
+    <div id="hits"><!-- Hits widget will appear here --></div>
+    <div id="pagination"><!-- Pagination widget will appear here --></div>
 
-上記スクリプトで指定したIDのタグにwidgetが挿入される。適当なページに下記を追加する。
-
-~~~ html {% raw %}
-<div id="search-box"><!-- SearchBox widget will appear here --></div>
-<div id="hits"><!-- Hits widget will appear here --></div>
-<div id="pagination"><!-- Pagination widget will appear here --></div>
-
-<!-- Including InstantSearch.js library and styling -->
-{% include algolia.html %}
-{% endraw %}~~~
+    <!-- Including InstantSearch.js library and styling -->
+    {% include algolia.html %}
+    {% endraw %}~~~
 
 ## カスタムする
 
