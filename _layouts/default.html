@@ -16,11 +16,7 @@ layout: compress
   {% if page.description %}
   <meta name="description" content="{{ page.description}}" />
   {% endif %}
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="/assets/css/syntax.css">
-  <link rel="stylesheet" href="/assets/css/style.css">
+
   </head>
   <body>
   <header>
@@ -42,5 +38,19 @@ layout: compress
     <li><a href="{{'./README' | relative_url}}">運用メモ</a></li>
     </div>
   </footer>
+  <script>
+  
+  var createlink = function(src) {
+    var link = document.createElement("link");
+    link.rel = "stylesheet"; 
+    link.href = src;
+    document.body.appendChild(link);
+  };
+  createlink("//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css");
+  createlink("https://fonts.googleapis.com/css?family=Roboto");
+  createlink("https://fonts.googleapis.com/icon?family=Material+Icons");
+  createlink("/assets/css/syntax.css");
+  createlink("/assets/css/style.css");
+  </script>
   </body>
 </html>
