@@ -4,12 +4,6 @@
   "root": "_site/",
   "headers": {
     "/": {
-      "Cache-Control": "no-store, no-cache"
-    },
-    "/assets/**": {
-      "Cache-Control": "public, max-age=512000"
-    },
-    "\.(txt|xml|js|css)$": {
       "Cache-Control": "public, max-age=512000"
     }
   }
