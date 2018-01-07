@@ -24,16 +24,19 @@ url: http://localhost:4000 # the base hostname & protocol for your site, e.g. ht
 markdown: kramdown
 incremental: true
 
-# Plugins
-plugins:
-  - jekyll-feed
-  - jekyll-algolia
+sass:
+  style: compressed
 
 compress_html:
   clippings: all
   comments:  ["<!-- ", " -->"]
   endings:   all
   
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-algolia
+
 # https://github.com/algolia/jekyll-algolia
 # $ bundle exec jekyll algolia
 # related file: ./_algolia_api_key
