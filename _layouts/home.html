@@ -3,16 +3,21 @@ layout: default
 ---
 
 <div class="row">
-<div class="col-xs-10">
-  <div id="search-box"><!-- SearchBox widget will appear here --></div>
-  <div id="hits"><!-- Hits widget will appear here --></div>  
-  <div id="pagination"><!-- Pagination widget will appear here --></div>
+<div class="col-xs-12
+            col-md-9">
+  <div class="box">
+    <div id="search-box"><!-- SearchBox widget will appear here --></div>
+    <div id="hits"><!-- Hits widget will appear here --></div>  
+    <div id="pagination"><!-- Pagination widget will appear here --></div>
+  </div>
 </div>
 
-<nav class="panel col-xs">
-  <div id="hierarchical-categories"></div>
-  <div id="calendar"></div>
-</nav>
+<div class="col-xs">
+  <nav class="panel">
+    <div id="hierarchical-categories"></div>
+    <div id="calendar"></div>
+  </nav>
+</div>
 </div><!-- .row -->
 
 {% include algolia.html %}

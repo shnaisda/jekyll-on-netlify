@@ -1,0 +1,27 @@
+.ais-search-box {
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+.ais-search-box--input {
+  border: 1px solid #A9A9A9;
+  height: 40px;
+  width: 100%;
+  color: #636363;
+}
+.ais-hits--item {
+  margin: 2em 0;
+}
+.search-highlight {
+  font-style: normal;
+  background-color: #ffcdd2;
+  color: #c62828;
+}
+#pagination {
+  text-align: center;
+}
+.ais-hierarchical-menu--count {
+  display: none;
+}
+.ais-pagination--item__active {
+  background: #d04526;
+}

@@ -1,85 +1,27 @@
 <!-- instantsearch.css -->
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/instantsearch.js@2.3/dist/instantsearch.min.css">
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/instantsearch.js@2.3/dist/instantsearch-theme-algolia.min.css">
+<link rel="stylesheet" href="/assets/css/ais.css">
 <!-- instantsearch.js -->
-<script async src="//cdn.jsdelivr.net/npm/instantsearch.js@2.3/dist/instantsearch.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/instantsearch.js@2.3/dist/instantsearch.min.js"></script>
 <!-- moment.js -->
-<script async src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
-<script async src="/assets/js/app.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+<script src="/assets/js/ais-template.js">var instantsearch = instantsearch;</script>
 <script>
 window.onload = function() {
-const search = instantsearch({
-  appId: '{{ site.algolia.application_id }}',
-  apiKey: '{{ site.algolia.read_only_api_key }}',
-  indexName: '{{ site.algolia.index_name }}',
-  urlSync: true
-});
-search.addWidget(instantsearch.widgets.hits({
-  container: '#hits',
-  cssClasses: {
-    item: 'card'
-  },
-  templates: {
-    empty: 'No results',
-    item: hitTemplate
-  }
-}));
-search.addWidget(instantsearch.widgets.searchBox({
-  container: '#search-box',
-  placeholder: 'Search for posts',
-  poweredBy: true
-}));
-search.addWidget(instantsearch.widgets.pagination({
-  container: '#pagination',
-}));
-search.addWidget(instantsearch.widgets.hierarchicalMenu({
-  container: '#hierarchical-categories',
-  attributes: ['categoriesTree.lvl0', 'categoriesTree.lvl1', 'categoriesTree.lvl2'],
-  templates: {
-    header: '<span class="mdi mdi-library-books mdi-18px"> Categories</span>'
-  }
-}));
-search.addWidget(instantsearch.widgets.numericRefinementList({
-  container: '#calendar',
-  attributeName: 'date',
-  options: [
-    {name: 'All'},
-    {start:1514732400, name: '2018'},
-    {start:1483228800, end:1514732399, name: '2017'}
-  ],
-  templates: {
-    header: '<span class="mdi mdi-calendar-range mdi-18px"> Calendar</span>'
-  }
-}));
-search.start();
+  const search = instantsearch({
+    appId: '{{ site.algolia.application_id }}',
+    apiKey: '{{ site.algolia.read_only_api_key }}',
+    indexName: '{{ site.algolia.index_name }}',
+    urlSync: true
+  });
+  
+  search.addWidget( hits );
+  search.addWidget( searchBox );
+  search.addWidget( pagination );
+  search.addWidget( hierarchicalMenu );
+  search.addWidget( numericRefinementList );
+  
+  search.start();
 }
 </script>
-<style>
-.ais-search-box {
-  max-width: 100%;
-  margin-bottom: 30px;
-}
-.ais-search-box--input {
-  border: 1px solid #A9A9A9;
-  height: 40px;
-  width: 100%;
-  color: #636363;
-}
-.ais-hits--item {
-  margin: 2em 0;
-}
-.search-highlight {
-  font-style: normal;
-  background-color: #ffcdd2;
-  color: #c62828;
-}
-#pagination {
-  text-align: center;
-}
-.ais-hierarchical-menu--count {
-  display: none;
-}
-.ais-pagination--item__active {
-  background: #d04526;
-}
-</style>
