@@ -26,10 +26,6 @@ kramdown:
    hard_wrap: true
 #incremental: true
 
-sass:
-  sass_dir: assets/css
-  style: compressed
-
 compress_html:
   clippings: all
   comments:  ["<!-- ", " -->"]
