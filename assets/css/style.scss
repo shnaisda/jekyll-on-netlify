@@ -36,19 +36,18 @@ footer {
   a, a:visited {
     color: white;
   }
-}
-
-.navbar ul {
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-.navbar li {
-  white-space: nowrap;
-  display: inline-block;
-  font-weight: bold;
-  padding-top: .1em;
-  margin: .1em .5em;
+  ul {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  li {
+    white-space: nowrap;
+    display: inline-block;
+    font-weight: bold;
+    padding-top: .1em;
+    margin: .1em .5em;
+  }
 }
 
 .panel-item { margin-bottom: 1em; }
