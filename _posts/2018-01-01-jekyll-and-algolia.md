@@ -12,7 +12,7 @@ categoriesTree:
 
 ## プラグインを追加する(レコードの書き込み)
 
-Jekyll用のプラグインがあるので利用する[^1]。
+Jekyll用のプラグインがあるので利用する{% cite github:jekyll-algolia %}。
 
 1. `./Gemfile`にプラグインを追記する。
 ~~~ sh
@@ -48,7 +48,7 @@ $ bundl exec jekyll algolia
 
 ## ページに検索機能を付ける(レコードの読み込み)
 
-Algoliaのドキュメントを参考にした[^2]。
+Algoliaのドキュメントを参考にした{% cite algolia:blog %}。
 
 1. `_includes/algolia.html`を作成して、Algolia関連の設定をまとめる。
     ~~~ html {% raw %}
@@ -102,10 +102,7 @@ Algoliaのドキュメントを参考にした[^2]。
 
 ## カスタムする
 
-サーチ機能の追加はドキュメントがあるので割愛。
-
-* [InstantSearch.js][linkid1]
-* [API Reference \| Algolia Documentation][linkid2]
+サーチ機能の追加はドキュメントがあるので割愛する{% cite algolia:instantsearch algolia:api-reference %}。
 
 書き込みの設定は`./_config.yml`で設定できる。
 
@@ -121,7 +118,7 @@ algolia:
 ## HerokuにPushする
 
 前提：[JekyllをHerokuにデプロイした]({% post_url 2017-12-31-jekyll-and-heroku %})。  
-HerokuのaddonでもAlgoliaがサポートされている[^3]けど、Rails向けのドキュメントしか見つからなかった。
+HerokuのaddonでもAlgoliaがサポートされているけど、Rails向けのドキュメントしか見つからなかったので{% cite heroku:algoliasearch %}、素直にJekyll＋Jekyllプラグインでビルドする。
 
 1. `Rakefile`を書き換える。
 ~~~ ruby
@@ -139,11 +136,5 @@ $ git push heroku master
 
 以上。
 
---- 
-[^1]: ["algolia/jekyll-algolia: Add fast and relevant search to your Jekyll site"](https://github.com/algolia/jekyll-algolia)
-[^2]: ["Algolia for Jekyll \| Search your Jekyll content with Algolia"](https://community.algolia.com/jekyll-algolia/blog.html)
-[^3]: ["Algolia Realtime Search \| Heroku Dev Center"](https://devcenter.heroku.com/articles/algoliasearch)
-
 [linkid1]:https://community.algolia.com/instantsearch.js/ 
 [linkid2]:https://www.algolia.com/doc/api-reference/
-[linkid3]:https://wiredcraft.com/blog/make-jekyll-fast/#step-8-use-something-like-algolia

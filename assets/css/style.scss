@@ -1,7 +1,6 @@
 ---
 ---
 body {
-  font-family: "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   img {
     width: 100%;
     height: auto;
@@ -10,10 +9,66 @@ body {
     color: #d04526;
   }
   .container {
-    padding: 1rem;
+    padding: 1em 2em;
   }
-  footer {
-    list-style: none;
+}
+
+footer {
+  clear: both;
+  list-style: none;
+  
+  .container {
+    color: #fff;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    background: #a42e2b;
+    padding: 0;
+    section {padding: 0.5em;}
+    a, a:visited {color: #fff;}
+  }
+}
+
+.navbar {
+  background-color: #a42e2b;
+  margin-bottom: 1.2em;
+  padding: 0.5em;
+  a, a:visited {
+    color: white;
+  }
+}
+
+.navbar ul {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.navbar li {
+  white-space: nowrap;
+  display: inline-block;
+  font-weight: bold;
+  padding-top: .1em;
+  margin: .1em .5em;
+}
+
+.panel-item { margin-bottom: 1em; }
+
+.first-column, .second-column {
+  max-width: 100%;
+  margin: auto;
+  padding-bottom: 1.2em;
+}
+
+@media (min-width: 57em) {
+  .first-column {
+    width: 61%;
+    float: left;
+    margin: 0;
+  }
+  .second-column {
+    width: 33%;
+    float: right;
+    margin: 0;
   }
 }
 
@@ -22,7 +77,7 @@ body {
     padding: 2px 16px;
   }
   .title, .subtitle {
-    margin: 0;
+    margin: 0.5em 0;
   }
   
   /* Add shadows to create the "card" effect */

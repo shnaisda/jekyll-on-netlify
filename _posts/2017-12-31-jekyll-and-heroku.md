@@ -9,7 +9,7 @@ categoriesTree:
   lvl1: ["commonplaces > web"]
   lvl2: ["commonplaces > web > jekyll"]
 ---
-手順はherokuのブログを参考にした[^1]。
+手順はherokuのブログを参考にした{% cite heroku:jekyll-on-heroku %}。
 
 1. bundlerとjekyllをインストールする。
 ~~~ sh
@@ -84,5 +84,3 @@ $ git push heroku master
 
 以上。
 
---- 
-[^1]: ["Jekyll on Heroku"](https://blog.heroku.com/jekyll-on-heroku)

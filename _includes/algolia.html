@@ -1,12 +1,14 @@
 <!-- instantsearch.css -->
-
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/instantsearch.js@2.3/dist/instantsearch.min.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/instantsearch.js@2.3/dist/instantsearch-theme-algolia.min.css">
 <!-- instantsearch.js -->
 <script defer src="//cdn.jsdelivr.net/npm/instantsearch.js@2.3/dist/instantsearch.min.js"></script>
 <!-- moment.js -->
 <script defer src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
 <!-- instantsearch widgets config and style -->
 <script defer src="/assets/js/ais-widgets.js"></script>
-<script defer>
+<link rel="stylesheet" href="/assets/css/ais-widgets.css">
+<script>
 window.onload = function() {
   const search = instantsearch({
     appId: '{{ site.algolia.application_id }}',
@@ -22,16 +24,5 @@ window.onload = function() {
   search.addWidget( numericRefinementList );
   
   search.start();
-};
-  var createlink = function(href) {
-    var link = document.createElement("link");
-    link.rel = "preload"; 
-    link.href = href;
-    link.as = "style";
-    link.onload=function(){this.rel="stylesheet"};
-    document.body.appendChild(link);
-  };
-createlink("//cdn.jsdelivr.net/npm/instantsearch.js@2.3/dist/instantsearch.min.css");
-createlink("//cdn.jsdelivr.net/npm/instantsearch.js@2.3/dist/instantsearch-theme-algolia.min.css");
-createlink("/assets/css/ais-widgets.css");
+}
 </script>

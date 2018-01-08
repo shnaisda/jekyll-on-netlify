@@ -16,6 +16,7 @@ const hitTemplate = function(data) {
     <section>
       <h2 class="title"><a href="${url}">${title}</a></h2>
       <h4 class="subtitle">${date} | ${breadcrumb}</h4>
+      <hr>
       <p><small>${content}</small></p>
     </section>
   `;
