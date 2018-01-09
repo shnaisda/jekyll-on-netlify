@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# 運用メモ
+# 管理用の運用メモ
 
 ## クローンする。
 ~~~ sh 
@@ -37,7 +37,7 @@ $ jekyll s
     ~~~ 
 
 ### 参照を加える。
-リンク切れが発生すると困る参照はbibファイルへまとめる。
+手順説明の元になる参照はbibファイルへまとめる。それ以外はMarkdownの脚注機能を利用する。
 1. `./_bibliography/references.bib`へ参照を追記する。
     ~~~ tex
     @manual{example,

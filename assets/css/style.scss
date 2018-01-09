@@ -13,6 +13,12 @@ body {
   }
 }
 
+.post {
+  ul {
+    li {word-break: break-all; }
+  }
+}
+
 footer {
   clear: both;
   list-style: none;
