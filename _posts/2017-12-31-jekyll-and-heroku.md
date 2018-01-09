@@ -84,5 +84,4 @@ $ git push heroku master
 
 以上。
 
----
 [1]:https://blog.heroku.com/jekyll-on-heroku
