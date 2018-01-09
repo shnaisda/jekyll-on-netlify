@@ -19,6 +19,7 @@ email: shnaisda@gmail.com
 description: 個人的な備忘録と雑記。
 baseurl: "" # the subpath of your site, e.g. /blog
 url: http://localhost:4000 # the base hostname & protocol for your site, e.g. http://localhost:4000
+google_analytics: "UA-111997865-1" 
 
 # Conversion
 markdown: kramdown
@@ -30,12 +31,12 @@ compress_html:
   clippings: all
   comments:  ["<!-- ", " -->"]
   endings:   all
-  
+
 # Plugins
 plugins:
   - jekyll-feed
   - jekyll-algolia
-  - 'jekyll/scholar'
+
 # https://github.com/algolia/jekyll-algolia
 # $ bundle exec jekyll algolia
 # related file: ./_algolia_api_key
@@ -56,11 +57,6 @@ algolia:
     highlightPreTag: '<em class="search-highlight">'
     highlightPostTag: '</em>'
     attributesForFaceting: ['categoriesTree.lvl0', 'categoriesTree.lvl1', 'categoriesTree.lvl2']
-
-scholar:
-  style: acs-nano
-  bibliography_template: bib
-  use_raw_bibtex_entry: true
   
 # Handling Reading
 exclude:

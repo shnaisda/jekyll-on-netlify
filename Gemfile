@@ -15,7 +15,6 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.9"
   gem 'jekyll-algolia', '~> 1.0'
   gem "rake", '~> 12.3'
-  gem "jekyll-scholar", '~> 5.11'
 end
 
 ruby "2.3.3"
