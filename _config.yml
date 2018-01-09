@@ -81,4 +81,4 @@ prose:
         field:
           label: "date"
           element: "text"
-          placeholder: "CURRENT_DATETIME"
+          value: "CURRENT_DATETIME"
