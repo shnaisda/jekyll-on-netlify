@@ -6,12 +6,7 @@ title: My References
 {{ page.title }}
 ================
 
-Tech References
+Manuals
 ------------------------
 
 {% bibliography --query @manual %}
-
-Others
-------------------------
-
-{% bibliography --query @misc %}

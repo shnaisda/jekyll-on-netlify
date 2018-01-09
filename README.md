@@ -37,6 +37,7 @@ $ jekyll s
     ~~~ 
 
 ### 参照を加える。
+リンク切れが発生すると困る参照はbibファイルへまとめる。
 1. `./_bibliography/references.bib`へ参照を追記する。
     ~~~ tex
     @manual{example,

@@ -5,9 +5,9 @@ title: 'JekyllにAlgoliaを追加した備忘録'
 date: 2018-01-01
 category: blog
 categoriesTree:
-  lvl0: ["commonplaces"]
-  lvl1: ["commonplaces > web"]
-  lvl2: ["commonplaces > web > jekyll"]
+  lvl0: ["備忘録"]
+  lvl1: ["備忘録 > web"]
+  lvl2: ["備忘録 > web > jekyll"]
 ---
 
 ## プラグインを追加する(レコードの書き込み)
@@ -135,6 +135,3 @@ $ git push heroku master
 ~~~ 
 
 以上。
-
-[linkid1]:https://community.algolia.com/instantsearch.js/ 
-[linkid2]:https://www.algolia.com/doc/api-reference/

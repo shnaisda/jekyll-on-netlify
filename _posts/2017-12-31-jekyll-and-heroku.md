@@ -5,9 +5,9 @@ title: 'JekyllをHerokuにデプロイした備忘録'
 date: 2017-12-31
 category: blog
 categoriesTree:
-  lvl0: ["commonplaces"]
-  lvl1: ["commonplaces > web"]
-  lvl2: ["commonplaces > web > jekyll"]
+  lvl0: ["備忘録"]
+  lvl1: ["備忘録 > web"]
+  lvl2: ["備忘録 > web > jekyll"]
 ---
 手順はherokuのブログを参考にした{% cite heroku:jekyll-on-heroku %}。
 
