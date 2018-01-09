@@ -13,7 +13,7 @@ $ cd jekyllog
 
 ## ローカルで確認する。
 ~~~ sh
-$ jekyll algolia
+$ ALGOLIA_API_KEY='{your_admin_api_key}' jekyll algolia
 $ jekyll s
 ~~~ 
 
