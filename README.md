@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# 管理用の運用メモ
+# BLOG管理用のメモ
 
 ## 投稿する。
 ### [Prose.io](http://prose.io)で記事を作成する。
@@ -24,7 +24,3 @@ layout: default
     ~~~ 
 
 ---
-
-### 静的サイトジェネレータの動向
-
-* [Top Open-Source Static Site Generators - StaticGen](https://www.staticgen.com/)
