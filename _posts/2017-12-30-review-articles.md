@@ -13,5 +13,9 @@ categoriesTree:
 
 > For those looking for exercises or drills, one of the easiest things to do would be to find a newspaper story, remove the articles, wait a day or two, and then try to add the articles back into the writing[^fn1].
 
+### 関連リンク
+
+* [冠詞 - 新しい英語の学び方](https://sites.google.com/site/newwaytostudyenglish/1/043)
+
 ---
 [^fn1]:[The Mistake No One Notices: Using The Zero Article In English](https://www.italki.com/article/1003/The-Mistake-No-One-Notices:-Using-The-Zero-Article-In-English)
