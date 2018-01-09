@@ -46,51 +46,6 @@ $ jekyll s
 
 ---
 
-### ディレクトリ構成
-
-~~~
-.
-+-- .git
-+-- _includes
-|   +-- algolia.html    # 1
-|   +-- ganalytics.html # 2
-+-- _layouts
-|   +-- compress.html   # 3
-|   +-- default.html
-|   +-- home.html
-|   +-- post.html
-+-- _posts
-|   +-- YYYY-MM-DD-TITLE.md
-+-- _site
-+-- assets
-|   +-- css
-|   |   +-- ais-widgets.scss    # 1
-|   |   +-- style.scss
-|   |   +-- syntax.scss
-|   +-- img
-|   +-- js
-|   |   +-- ais-widgets.js  # 1
-+-- .gitignore
-+-- _algolia_api_key    # 1
-+-- _config.yml
-+-- 404.html
-+-- ABOUT.md
-+-- Gemfile
-+-- Gemfile.lock
-+-- index.md
-+-- Rakefile    # 4
-+-- README.md
-+-- static.json # 4
-~~~
-
-外部ツールのための関連ファイルは番号付けしている。
-1. Algolia
-1. Google Analytics
-1. Compress HTML in Jekyll
-1. Heroku
-
----
-
 ### 静的サイトジェネレータの動向
 
 * [Top Open-Source Static Site Generators - StaticGen](https://www.staticgen.com/)
