@@ -58,7 +58,7 @@ algolia:
     highlightPreTag: '<em class="search-highlight">'
     highlightPostTag: '</em>'
     attributesForFaceting: ['categoriesTree.lvl0', 'categoriesTree.lvl1', 'categoriesTree.lvl2']
-  
+
 # Handling Reading
 exclude:
    - Gemfile
@@ -68,3 +68,17 @@ exclude:
    - vendor/cache/
    - vendor/gems/
    - vendor/ruby/
+
+prose:
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          label: "layout"
+          element: "text"
+          value: "post"
+      - name: "date"
+        field:
+          label: "date"
+          element: "text"
+          value: "CURRENT_DATETIME"
