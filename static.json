@@ -6,5 +6,6 @@
     "/assets/**": {
       "Cache-Control": "public, max-age=2628000"
     }
-  }
+  },
+  "error_page": "404.html",
 }
