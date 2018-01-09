@@ -118,25 +118,6 @@ algolia:
     highlightPostTag: '</em>'
 {% endraw %}~~~ 
 
-## HerokuにPushする
-
-前提：[JekyllをHerokuにデプロイした]({% post_url 2017-12-31-jekyll-and-heroku %})。  
-HerokuのaddonでもAlgoliaがサポートされているけど、Rails向けのドキュメントしか見つからなかったので[^fn1]、素直にjekyll-algoliaプラグインでビルドする。
-
-1. `Rakefile`を書き換える。
-~~~ ruby
-task "assets:precompile" do
-  `(bundle exec jekyll algolia && jekyll build)`
-end
-~~~
-
-1. ファイルをpushする。
-~~~ sh
-$ git add .
-$ git commit -m "Update Rakefile"
-$ git push heroku master
-~~~ 
-
 以上。
 
 ---
