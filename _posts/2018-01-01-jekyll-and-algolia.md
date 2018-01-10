@@ -37,10 +37,10 @@ algolia:
   read_only_api_key: 'your_read_only_api_key'
 ~~~ 
 
-1. `./_algolia_api_key`を作成して、書き込み用のAPI Keyをコピペする。
+1. `./_algolia_api_key`を作成して、書き込み用のAPI Keyをコピペする。Git管理する場合、`./.gitignore`にこのファイルを追加する。
 ~~~ 
 ••••••••••••••••••••••••••••••••
-~~~ 
+~~~
 
 1. 下記コマンドを実行すると、ブログ記事に対してインデックスが付く。設定がデフォルトの場合、内容に`<p>`タグが無いと対象外。
 ~~~ 
@@ -119,25 +119,23 @@ algolia:
 
 ## Netlifyにデプロイする
 
-手順は[Netlifyのドキュメント][3]と[Algoliaのドキュメント][1]に丁寧な説明があるので、つまづいた点について。
+手順は[Netlifyのドキュメント][3]と[Algoliaのドキュメント][4]に丁寧な説明があるので、つまづいた点について。
 
-1. `./netlify.toml`を作成する。生データのみ書き込む。
+1. `./netlify.toml`を作成する。**生データのみ**書き込む。
 ~~~
 [build]
   command = "jekyll build && jekyll algolia"
   publish = "_site"
 ~~~ 
 
-1. `./.ruby-version`にバージョンを追記する。生データのみ書き込む。
+1. `./.ruby-version`を作成する。**生データのみ**書き込む。
 ~~~
-2.4
+2.3.3
 ~~~ 
 
 以上。
 
----
-[^fn1]:[Algolia Realtime Search \| Heroku Dev Center](https://devcenter.heroku.com/articles/algoliasearch)
-
 [1]:https://community.algolia.com/jekyll-algolia/blog.html
 [2]:https://github.com/algolia/jekyll-algolia
 [3]:https://www.netlify.com/blog/2015/10/28/a-step-by-step-guide-jekyll-3.0-on-netlify/
+[4]:https://community.algolia.com/jekyll-algolia/netlify.html

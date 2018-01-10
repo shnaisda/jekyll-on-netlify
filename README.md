@@ -4,20 +4,28 @@ layout: default
 
 # BLOG管理用のメモ
 
-## リモートを追加する。
-* https://help.github.com/articles/adding-a-remote/
-
 ## クローンする。
-* https://help.github.com/articles/fetching-a-remote/
-
-## ローカルで確認する。
 ~~~ sh
-$ jekyll algolia
-$ jekyll s
+git clone https://github.com/shnaisda/jekyll-on-netlify.git
 ~~~ 
 
+## ローカルで確認する。
+1. Algoliaのレコードを更新する。
+    ~~~ sh
+    $ ALGOLIA_API_KEY='{your_admin_api_key}' jekyll algolia
+    ~~~
+    * もしくは、`_algolia_api_key`を作成して下記コマンド。
+        ~~~ sh
+        $ jekyll algolia
+        ~~~
+    
+1. ローカルサーバを立てて、`http://localhost:4000/`へアクセスする。
+    ~~~ sh
+    $ jekyll s
+    ~~~
+    
 ## 投稿する。
-### [Prose.io](http://prose.io)で記事を作成する。
+### 記事を作成する。
 1. ファイル`./_posts/YEAR-MONTH-DAY-title.md`を作成する。
 
 1. 作成したファイルにMetaデータを挿入する。コメントアウト以外は必須。
@@ -28,17 +36,21 @@ $ jekyll s
     layout: post
     category: blog
     categoriesTree:
-      lvl0: ["Animal", "Cook"]
+      lvl0: ["Animal"]
     #  lvl1: ["Animal > Fish"]
     #  lvl2: ["Animal > Fish > Dark sleeper"]
     ---
     ... post content
     ~~~
-    
-### デプロイする。
-* https://help.github.com/articles/pushing-to-a-remote/
 
-1. ローカルで確認して問題なければHerokuへデプロイする。
+### デプロイする。
+
+1. リモートを追加する。
+    ~~~ sh
+    $ git remote add origin https://github.com/shnaisda/jekyll-on-netlify.git
+    ~~~
+
+1. ローカルで確認して問題なければデプロイする。
     ~~~ sh
     $ git add .
     $ git commit -m "Update files"
