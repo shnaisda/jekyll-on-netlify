@@ -87,7 +87,3 @@ prose:
           label: "date"
           element: "text"
           value: CURRENT_DATETIME
-      - name: "title"
-        field:
-          element: "text"
-          label: "title"
