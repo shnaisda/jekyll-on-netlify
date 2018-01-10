@@ -87,15 +87,8 @@ prose:
           label: "date"
           element: "text"
           value: CURRENT_DATETIME
-      - name: "categoriesTree"
+      - name: "raw"
         field:
-          element: "multiselect"
-          label: "Hierarchical Categories"
-          placeholder: "Choose Tags"
-          options:
-            - name: "lvl0"
-              value: "apples"
-            - name: "lvl1"
-              value: "apples > bananas"
-            - name: "lvl2"
-              value: "apples > bananas > apples"
+          label: "raw"
+          element: "raw"
+          value: "a"
