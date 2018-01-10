@@ -87,8 +87,7 @@ prose:
           label: "date"
           element: "text"
           value: CURRENT_DATETIME
-      - name: "raw"
+      - name: "title"
         field:
-          label: "raw"
-          element: "raw"
-          value: "at: on"
+          element: "text"
+          label: "title"
