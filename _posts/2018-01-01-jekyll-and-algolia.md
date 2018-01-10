@@ -117,6 +117,22 @@ algolia:
     highlightPostTag: '</em>'
 {% endraw %}~~~ 
 
+## Netlifyにデプロイする
+
+手順は[Netlifyのドキュメント][3]と[Algoliaのドキュメント][1]に丁寧な説明があるので、つまづいた点について。
+
+1. `./netlify.toml`を作成する。生データのみ書き込む。
+~~~
+[build]
+  command = "jekyll build && jekyll algolia"
+  publish = "_site"
+~~~ 
+
+1. `./.ruby-version`にバージョンを追記する。生データのみ書き込む。
+~~~
+2.4
+~~~ 
+
 以上。
 
 ---
@@ -124,3 +140,4 @@ algolia:
 
 [1]:https://community.algolia.com/jekyll-algolia/blog.html
 [2]:https://github.com/algolia/jekyll-algolia
+[3]:https://www.netlify.com/blog/2015/10/28/a-step-by-step-guide-jekyll-3.0-on-netlify/
