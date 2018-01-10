@@ -1,6 +1,5 @@
 ---
 layout: post
-published: true
 title: '年末年始にWEBで気になるモノ'
 date: 2018-01-09
 category: blog

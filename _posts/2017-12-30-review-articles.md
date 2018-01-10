@@ -1,6 +1,5 @@
 ---
 layout: post
-published: true
 title: '冠詞のおさらい'
 date: 2017-12-30
 category: blog
