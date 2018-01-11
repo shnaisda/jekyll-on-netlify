@@ -103,7 +103,7 @@ $ bundl exec jekyll algolia
 
 サーチ機能の追加はドキュメントがある（下記URLとか）ので割愛する。
 
-* [InstantSearch.js](https://community.algolia.com/instantsearch.js/)
+* [InstantSearch.js](https://community.algolia.com/instantsearch.js/v2/widgets.html)
 * [API Reference \| Algolia Documentation](https://www.algolia.com/doc/api-reference/)
 
 書き込みの設定は`./_config.yml`で設定できる。
@@ -132,6 +132,10 @@ algolia:
 ~~~
 2.3.3
 ~~~ 
+
+## デモページ
+
+* [https://community.algolia.com/jekyll-algolia-example/](https://community.algolia.com/jekyll-algolia-example/)
 
 以上。
 

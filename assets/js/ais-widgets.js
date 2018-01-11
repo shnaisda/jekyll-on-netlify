@@ -42,6 +42,7 @@ var pagination = instantsearch.widgets.pagination({
 });
 var hierarchicalMenu = instantsearch.widgets.hierarchicalMenu({
   container: '#hierarchical-categories',
+  autoHideContainer: false,
   attributes: ['categoriesTree.lvl0', 'categoriesTree.lvl1', 'categoriesTree.lvl2'],
   templates: {
     header: '<span><i class="material-icons md-16">library_books</i> Categories</span>'
@@ -50,13 +51,14 @@ var hierarchicalMenu = instantsearch.widgets.hierarchicalMenu({
 var numericRefinementList = instantsearch.widgets.numericRefinementList({
   container: '#calendar',
   attributeName: 'date',
+  autoHideContainer: false,
   options: [
     {name: 'All'},
     {start:1514732400, name: '2018'},
     {start:1483228800, end:1514732399, name: '2017'}
   ],
   templates: {
-    header: '<span><i class="material-icons md-16">date_range</i> Categories</span>'
+    header: '<span><i class="material-icons md-16">date_range</i> Calendar</span>'
   }
 });
 

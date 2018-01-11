@@ -17,11 +17,13 @@ window.onload = function() {
     urlSync: true
   });
   
-  search.addWidget( hits );
-  search.addWidget( searchBox );
-  search.addWidget( pagination );
-  search.addWidget( hierarchicalMenu );
-  search.addWidget( numericRefinementList );
+  search.addWidgets([
+    hits,
+    searchBox,
+    pagination,
+    hierarchicalMenu,
+    numericRefinementList
+  ]);
   
   search.start();
 }
