@@ -26,6 +26,11 @@ layout: compress
   
   </head>
   <body>
+<div id="google_translate_element" class="toolbar"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'ja', includedLanguages: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   <header>
     <div class="container">
       <h1><a href="/">{{ site.title }}</a> <small>{{ site.description }}</small></h1>
@@ -35,7 +40,6 @@ layout: compress
   <nav class="navbar">
     <ul>
       <li><a href="/">HOME</a></li>
-      <li><a href="{{'ABOUT' | relative_url}}">ABOUT</a></li>
       <li><a href="{{'README' | relative_url}}">MANUAL</a></li>
     </ul>
   </nav><!--  .navbar -->

@@ -1,7 +1,7 @@
 ---
 ---
 body {
-  img {
+  article.post img {
     width: 100%;
     height: auto;
   }
@@ -11,6 +11,11 @@ body {
   .container {
     padding: 1em 2em;
   }
+}
+
+.toolbar {
+  background-color: #ddd;
+  padding: 0.2em 1em;
 }
 
 .post {

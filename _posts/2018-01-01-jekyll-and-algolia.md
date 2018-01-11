@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'JekyllにAlgoliaを追加した備忘録'
+title: JekyllにAlgoliaを追加してNetlifyにデプロイした備忘録
 date: 2018-01-01
 category: blog
 categoriesTree:
@@ -9,13 +9,13 @@ categoriesTree:
   lvl2: ["備忘録 > web > jekyll"]
 ---
 
-手順は主に[Algoliaのドキュメント][1]を参考にした。
+下記手順は[Algoliaのドキュメント][1]をもとにした。
 
-## プラグインを追加する(レコードの書き込み)
+## Algoliaのレコードに書き込む方法
 
-Jekyll用の[プラグイン][2]があるので利用する。
+[プラグイン][2]を利用する。
 
-1. `./Gemfile`にプラグインを追記する。
+1. `./Gemfile`に下記を書き込む。
 ~~~ sh
 gem 'jekyll-algolia', '~> 1.0'
 ~~~ 
@@ -23,10 +23,10 @@ gem 'jekyll-algolia', '~> 1.0'
 1. Algoliaアカウントを作成して、Indexを作成する。
 ![algolia-indices-view](/assets/img/algolia-indices-view.png)
 
-1. Application IDと読み取り用のAPI Keyを確認する。
+1. Application IDと読み込み用のAPI Keyを確認する。
 ![algolia-api-keys-view](/assets/img/algolia-api-keys-view.png)
 
-1. 書き込み用のAPI Keyを作成する。各操作権限にチェックをつける(画像だと見切れてる)。
+1. 書き込み用のAPI Keyを作成する。
 ![algolia-new-key-view.png](/assets/img/algolia-new-key-view.png)
 
 1. `./_config.yml`にパラメータを追記する。
@@ -42,12 +42,12 @@ algolia:
 ••••••••••••••••••••••••••••••••
 ~~~
 
-1. 下記コマンドを実行すると、ブログ記事に対してインデックスが付く。設定がデフォルトの場合、内容に`<p>`タグが無いと対象外。
+1. 下記コマンドを実行すると、ブログ記事がレコードに更新される。
 ~~~ 
 $ bundl exec jekyll algolia
 ~~~ 
 
-## ページに検索機能を付ける(レコードの読み込み)
+## Algoliaのレコードを読み込む方法
 
 1. `_includes/algolia.html`を作成して、Algolia関連の設定をまとめる。
     ~~~ html {% raw %}
@@ -101,10 +101,9 @@ $ bundl exec jekyll algolia
 
 ## カスタムする
 
-サーチ機能の追加はドキュメントがある（下記URLとか）ので割愛する。
+サーチ機能の追加方法はドキュメントがある（例えば下記URL）ので割愛する。
 
 * [InstantSearch.js](https://community.algolia.com/instantsearch.js/v2/widgets.html)
-* [API Reference \| Algolia Documentation](https://www.algolia.com/doc/api-reference/)
 
 書き込みの設定は`./_config.yml`で設定できる。
 
@@ -119,7 +118,7 @@ algolia:
 
 ## Netlifyにデプロイする
 
-手順は[Netlifyのドキュメント][3]と[Algoliaのドキュメント][4]に丁寧な説明があるので割愛する。つまづいた点について下記補足。
+[Netlifyのドキュメント][3]と[Algoliaのドキュメント][4]に丁寧な説明がある。つまづいた点についてだけ下記補足。
 
 1. `./netlify.toml`を作成する。**生データのみ**書き込む。
 ~~~
