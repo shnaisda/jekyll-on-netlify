@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# BLOG管理用のメモ
+# 投稿の手順
 
 ## クローンする。
 ~~~ sh
@@ -44,6 +44,8 @@ git clone https://github.com/shnaisda/jekyll-on-netlify.git
     ~~~
 
 ### デプロイする。
+
+1. `git init`コマンドで初期化する。
 
 1. リモートを追加する。
     ~~~ sh

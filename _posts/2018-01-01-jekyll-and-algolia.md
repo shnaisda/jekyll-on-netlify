@@ -118,9 +118,9 @@ algolia:
 
 ## Netlifyにデプロイする
 
-[Netlifyのドキュメント][3]と[Algoliaのドキュメント][4]に丁寧な説明がある。つまづいた点についてだけ下記補足。
+[Netlifyのドキュメント][3]と[Algoliaのドキュメント][4]に丁寧な説明がある。Netlifyのアカウントを作成して下記ファイルを作成する。リポジトリのファイルが更新されると`./netlify.toml`で指定したコマンドが実行される。
 
-1. `./netlify.toml`を作成する。**生データのみ**書き込む。
+1. `./netlify.toml`を作成する。
 ~~~
 [build]
   command = "jekyll build && jekyll algolia"
