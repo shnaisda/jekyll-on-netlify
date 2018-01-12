@@ -14,9 +14,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Log 
+title: jekyll-algolia 
 # email: shnaisda@gmail.com
-description: 個人的な備忘録と雑記。
+description: demo page
 baseurl: "" # the subpath of your site, e.g. /blog
 url: http://localhost:4000 # the base hostname & protocol for your site, e.g. http://localhost:4000
 google_analytics: "UA-111997865-1" 
